@@ -105,10 +105,12 @@
         android:layout_marginEnd="76dp"
         android:text="@string/signin2"
         android:textSize="15dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.921" />
+        app:layout_constraintVertical_bias="0.921"
+        android:onClick="onRegister" />
 </androidx.constraintlayout.widget.ConstraintLayout>

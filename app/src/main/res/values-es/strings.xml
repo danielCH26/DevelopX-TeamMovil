@@ -8,4 +8,13 @@
     <string name="welcome">Bienvenido</string>
     <string name="select1">Selecciona una categoría</string>
     <string name="errorLogin">Usuario o contraseña incorrectos</string>
+    <string name="register">Registro</string>
+    <string name="newUser">Nuevo usuario</string>
+    <string name="name">Nombre</string>
+    <string name="lastName">Apellidor</string>
+    <string name="id">Numero de identificación</string>
+    <string name="phone">Teléfono</string>
+    <string name="email">Email</string>
+    <string name="tpyc">Acepta términos y condiciones</string>
+    <string name="createAccount">Crear cuenta</string>
 </resources>

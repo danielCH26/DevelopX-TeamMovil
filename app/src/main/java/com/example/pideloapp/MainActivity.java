@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText edtEmail;
     EditText edtPass;
+    TextView textView4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         edtEmail = (EditText) findViewById(R.id.edtxEmail);
         edtPass = (EditText) findViewById(R.id.edtxPass);
         Button bntLogin = (Button) findViewById(R.id.btnLogin);
+        textView4 = (TextView) findViewById(R.id.textView4);
 
     }
 
@@ -36,4 +39,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,  "@string/errorLogin", Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void onRegister(View view) {
+        Intent ToRegister = new Intent(view.getContext(),UserRegister.class);
+        startActivityForResult(ToRegister,0);
+    }
+
 }

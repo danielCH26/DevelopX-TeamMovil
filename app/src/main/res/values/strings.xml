@@ -8,4 +8,13 @@
     <string name="welcome">Welcome</string>
     <string name="select1">Select a category</string>
     <string name="errorLogin">Invalid username or password</string>
+    <string name="register">Register</string>
+    <string name="newUser">New user</string>
+    <string name="name">Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="id">Identification number</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="tpyc">Accept termns and conditions</string>
+    <string name="createAccount">Create account</string>
 </resources>
