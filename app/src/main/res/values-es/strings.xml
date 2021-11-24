@@ -17,4 +17,5 @@
     <string name="email">Email</string>
     <string name="tpyc">Acepta términos y condiciones</string>
     <string name="createAccount">Crear cuenta</string>
+    <string name="readTPYC">Leer términos y condiciones</string>
 </resources>

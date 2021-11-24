@@ -122,6 +122,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passord" />
 
+    <TextView
+        android:id="@+id/txvTPYC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/readTPYC"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="readTPYC"/>
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="450dp"
