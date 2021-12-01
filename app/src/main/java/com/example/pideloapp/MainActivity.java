@@ -11,29 +11,35 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText edtEmail;
-    EditText edtPass;
-
+    EditText EdtUser;
+    EditText EdtPassword;
+    Button btnLogin, btnJoinIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        edtEmail = (EditText) findViewById(R.id.edtxEmail);
-        edtPass = (EditText) findViewById(R.id.edtxPass);
-        Button bntLogin = (Button) findViewById(R.id.btnLogin);
+        EdtUser = findViewById(R.id.edtUser);
+        EdtPassword = findViewById(R.id.edtPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        btnJoinIn = findViewById(R.id.btnGoJoinIn);
 
     }
 
     public void onLogin(View view) {
-        if (edtEmail.getText().toString().equals("a@b.c") && edtPass.getText().toString().equals("1234"))
+        if (EdtUser.getText().toString().equals("daniel") && EdtPassword.getText().toString().equals("1234"))
         {
             Intent ToWelcome = new Intent (view.getContext(),Welcome.class);
             startActivityForResult(ToWelcome,0);
-            Toast.makeText(getApplicationContext(), "@string/welcome", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "@string/txtWelcome", Toast.LENGTH_LONG).show();
         }
         else{
-            Toast.makeText(this,  "@string/errorLogin", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,  "@string/txtErrorLogin", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void onGoJoinIn(View view) {
+        Intent ToJoinIn = new Intent (view.getContext(),JoinIn.class);
+        startActivityForResult(ToJoinIn,0);
     }
 }

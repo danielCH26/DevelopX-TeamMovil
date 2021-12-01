@@ -1,118 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/fondoland">
+    android:background="@drawable/fondo"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="60dp"
+        android:layout_marginLeft="60dp">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:orientation="vertical"
+        android:layout_marginVertical="90dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtUser"
+            android:textSize="60dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/txtvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPassword"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onLogin"
+                android:text="@string/txtBtnLogin"
+                android:layout_marginRight="20dp"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="393dp"
-        android:layout_height="327dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501"
-        android:src="@drawable/logo"/>
+            <Button
+                android:id="@+id/btnGoJoinIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onGoJoinIn"
+                android:text="@string/txtBtnJoinIn"
+                android:layout_marginLeft="20dp"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="351dp"
-        android:layout_height="66dp"
-        android:onClick="onLogin"
-        android:text="@string/login"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
 
-    <TextView
-        android:id="@+id/txv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/password"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/edtxPass"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.597"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        </LinearLayout>
 
-    <EditText
-        android:id="@+id/edtxPass"
-        android:layout_width="400dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="164dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
 
-    <EditText
-        android:id="@+id/edtxEmail"
-        android:layout_width="400dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="340dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/txv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/user"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/edtxEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.546"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="448dp"
-        android:text="@string/signin1"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="76dp"
-        android:text="@string/signin2"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

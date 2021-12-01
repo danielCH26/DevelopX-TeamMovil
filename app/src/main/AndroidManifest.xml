@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PideloApp">
         <activity
+            android:name=".JoinIn"
+            android:exported="false" />
+        <activity
             android:name=".Welcome"
             android:exported="false" />
         <activity
