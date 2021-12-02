@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         if (EdtUser.getText().toString().equals("daniel") && EdtPassword.getText().toString().equals("1234"))
         {
             Intent ToWelcome = new Intent (view.getContext(),Welcome.class);
-            startActivityForResult(ToWelcome,0);
+            startActivity(ToWelcome);
             Toast.makeText(getApplicationContext(), "@string/txtWelcome", Toast.LENGTH_LONG).show();
         }
         else{
@@ -40,6 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onGoJoinIn(View view) {
         Intent ToJoinIn = new Intent (view.getContext(),JoinIn.class);
-        startActivityForResult(ToJoinIn,0);
+        startActivity(ToJoinIn);
     }
 }
