@@ -9,4 +9,7 @@
     <string name="txtWelcome">Welcome</string>
     <string name="txtSelect">Select a category</string>
     <string name="txtErrorLogin">Invalid username or password</string>
+    <string name="txtActionSearch">Search</string>
+    <string name="txtActionSettings">Settings</string>
+    <string name="txtActionLogout">Logout</string>
 </resources>

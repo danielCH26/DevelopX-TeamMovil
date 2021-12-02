@@ -9,4 +9,7 @@
     <string name="txtWelcome">Bienvenido</string>
     <string name="txtSelect">Selecciona una categoría</string>
     <string name="txtErrorLogin">Usuario o contraseña incorrectos</string>
+    <string name="txtActionSearch">Buscar</string>
+    <string name="txtActionSettings">Configuraciones</string>
+    <string name="txtActionLogout">Cerrar sesion</string>
 </resources>
