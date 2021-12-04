@@ -107,4 +107,13 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="menuHome">Home</string>
+    <string name="menuCategories">Categories</string>
+    <string name="home">home</string>
+    <string name="Categories">Categories</string>
+    <string name="logOut">Log Out</string>
+    <string name="cart">Shopping cart</string>
+    <string name="profile">User profile</string>
+
+
 </resources>

@@ -12,10 +12,13 @@
         <entry key="app/src/main/res/layout-sw720dp/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout-sw720dp/activity_user_register.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_main_content_app.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_registro_usuario.xml" value="0.18478260869565216" />
         <entry key="app/src/main/res/layout/activity_user_register.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.2078804347826087" />
         <entry key="app/src/main/res/layout/fragment_t_p_y_c.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/nav_header.xml" value="0.165" />
+        <entry key="app/src/main/res/menu/nav_menu.xml" value="0.28125" />
       </map>
     </option>
   </component>

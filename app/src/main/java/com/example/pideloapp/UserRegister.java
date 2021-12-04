@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class UserRegister extends AppCompatActivity {
 
     FragmentContainerView FragTPYC;
-    Fragment Frag;
+    Fragment FragView;
     TextView readTPYC;
 
     @Override
@@ -22,21 +22,22 @@ public class UserRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_register);
         FragTPYC = (FragmentContainerView) findViewById(R.id.FragmentTPYC);
+        //FragTPYC.setVisibility(View.INVISIBLE);
         TextView readTPYC = (TextView) findViewById(R.id.txvTPYC);
-
 
     }
 
     public void readTPYC(View view) {
 
-        Frag = new TPYCFragment();
-        cargarFragmento(Frag);
+        FragView = new TPYCFragment();
+        cargarFragmento(FragView);
 
     }
 
-    private void cargarFragmento(Fragment frag) {
+    private void cargarFragmento(Fragment FragView) {
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.FragmentTPYC,FragView);
         transaction.commit();
     }
 
