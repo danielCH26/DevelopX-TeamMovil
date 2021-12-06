@@ -2,6 +2,7 @@ package com.example.pideloapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,7 +17,7 @@ public class Welcome extends AppCompatActivity {
         setContentView(R.layout.activity_welcome);
         setSupportActionBar(findViewById(R.id.tlbWelcome));
     }
-/*
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_welcome_activity, menu);
@@ -42,5 +43,7 @@ public class Welcome extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
 
-    }*/
+    }
+
+
 }
