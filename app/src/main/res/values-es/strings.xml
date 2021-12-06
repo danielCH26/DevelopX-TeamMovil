@@ -12,4 +12,5 @@
     <string name="txtActionSearch">Buscar</string>
     <string name="txtActionSettings">Configuraciones</string>
     <string name="txtActionLogout">Cerrar sesion</string>
+    <string name="txtRole">Rol</string>
 </resources>

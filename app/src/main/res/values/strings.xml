@@ -12,4 +12,6 @@
     <string name="txtActionSearch">Search</string>
     <string name="txtActionSettings">Settings</string>
     <string name="txtActionLogout">Logout</string>
+    <string name="txtRole">Role</string>
+
 </resources>

@@ -57,6 +57,21 @@
             android:inputType="textEmailAddress"/>
 
         <TextView
+            android:id="@+id/txtvRol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtRole"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edtRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <TextView
             android:id="@+id/txtvPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
