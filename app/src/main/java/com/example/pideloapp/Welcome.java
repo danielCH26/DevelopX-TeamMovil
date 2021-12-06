@@ -15,7 +15,7 @@ public class Welcome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        setSupportActionBar(findViewById(R.id.tlbWelcome));
+        setSupportActionBar(findViewById(R.id.tlbWelcome))        ;
     }
 
     @Override
