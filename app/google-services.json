@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1020916977305",
+    "project_id": "pideloapp-97e60",
+    "storage_bucket": "pideloapp-97e60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020916977305:android:f324a240e312834e06f208",
+        "android_client_info": {
+          "package_name": "com.example.pideloapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020916977305-becv9mm305dcegp0it095si17pdbvlsv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBBPPJJlV-5ugOVnpijO74pOqFQBEdNLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020916977305-becv9mm305dcegp0it095si17pdbvlsv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
