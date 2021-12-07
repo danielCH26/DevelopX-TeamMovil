@@ -38,9 +38,10 @@
             android:id="@+id/txtvUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txtUser"
+            android:text="@string/txtEmail"
             android:textSize="30dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"/>
 
         <EditText
             android:id="@+id/edtUser"

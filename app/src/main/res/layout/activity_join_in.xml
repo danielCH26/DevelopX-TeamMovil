@@ -32,12 +32,30 @@
             android:id="@+id/txtvUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txtUser"
+            android:text="@string/txtName"
             android:textSize="20dp"
             android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/edtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+
+
+        <TextView
+            android:id="@+id/txtvRol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtLastName"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/edtRole"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"/>
@@ -49,28 +67,14 @@
             android:text="@string/txtEmail"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress"/>
 
         <EditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"/>
-
-        <TextView
-            android:id="@+id/txtvRol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txtRole"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
-
-        <EditText
-            android:id="@+id/edtRole"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"/>
 
         <TextView
             android:id="@+id/txtvPassword"
@@ -114,6 +118,8 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"/>
+
+
 
     </LinearLayout>
 

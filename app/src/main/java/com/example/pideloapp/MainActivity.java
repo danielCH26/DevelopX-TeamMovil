@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                     else{
                         Log.w("TAG","Error",task.getException());
                     }
-
                 }
             });
         }

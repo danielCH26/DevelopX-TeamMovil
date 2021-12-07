@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">PideloApp</string>
-    <string name="txtUser">Username</string>
+    <string name="txtName">Name</string>
+    <string name="txtLastName">Last name</string>
     <string name="txtEmail">Email</string>
     <string name="txtPassword">Password</string>
     <string name="txtConfirmPassword">Confirm Password</string>
