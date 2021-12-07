@@ -14,5 +14,6 @@
     <string name="txtActionSettings">Settings</string>
     <string name="txtActionLogout">Logout</string>
     <string name="txtRole">Role</string>
+    <string name="txtAlreadyRegister">Have you already registered?</string>
 
 </resources>

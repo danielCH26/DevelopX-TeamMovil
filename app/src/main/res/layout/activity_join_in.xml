@@ -37,7 +37,7 @@
             android:textStyle="bold"/>
 
         <EditText
-            android:id="@+id/edtUser"
+            android:id="@+id/edtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"/>
@@ -55,7 +55,7 @@
             android:inputType="text"/>
 
         <EditText
-            android:id="@+id/edtRole"
+            android:id="@+id/edtLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"/>
@@ -118,6 +118,34 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtAlreadyRegister"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"/>
+
+
+                <TextView
+                    android:id="@+id/txtvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtBtnLogin"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="onGoLogin"
+                    android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
 
 
 
