@@ -77,36 +77,37 @@
             android:inputType="textEmailAddress"/>
 
         <TextView
-            android:id="@+id/txtvPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txtPassword"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
-
-        <EditText
-            android:id="@+id/edtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            />
-
-        <TextView
             android:id="@+id/txtvConfirmPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txtConfirmPassword"
+            android:text="@string/txtPhone"
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"/>
 
         <EditText
-            android:id="@+id/edtConfirmPassword"
+            android:id="@+id/edtPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
+            android:inputType="number"
             />
+
+        <TextView
+        android:id="@+id/txtvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPassword"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+        <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+
 
         <Button
             android:id="@+id/btnJoinIn"

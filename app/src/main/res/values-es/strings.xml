@@ -15,4 +15,5 @@
     <string name="txtActionLogout">Cerrar sesion</string>
     <string name="txtRole">Rol</string>
     <string name="txtAlreadyRegister">Ya te registraste?</string>
+    <string name="txtPhone">Telefono</string>
 </resources>

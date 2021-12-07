@@ -39,7 +39,8 @@
             android:id="@+id/txtvUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txtUser"
+            android:text="@string/txtEmail"
+            android:inputType="textEmailAddress"
             android:textSize="60dp"
             android:textStyle="bold"/>
 
