@@ -16,4 +16,5 @@
     <string name="txtRole">Rol</string>
     <string name="txtAlreadyRegister">Ya te registraste?</string>
     <string name="txtPhone">Telefono</string>
+    <string name="txtActionProfile">Perfil</string>
 </resources>

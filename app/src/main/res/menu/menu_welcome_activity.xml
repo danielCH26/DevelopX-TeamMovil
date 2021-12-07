@@ -9,10 +9,16 @@
         app:showAsAction="always"/>
 
     <item
+        android:id="@+id/actionProfile"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/txtActionProfile"
+        app:showAsAction="never"/>
+
+    <item
         android:id="@+id/actionSettings"
         android:icon="@android:drawable/ic_menu_preferences"
         android:title="@string/txtActionSettings"
-        app:showAsAction="always"/>
+        app:showAsAction="never"/>
 
     <item
         android:id="@+id/actionLogout"
