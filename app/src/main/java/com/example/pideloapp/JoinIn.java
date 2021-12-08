@@ -33,7 +33,7 @@ public class JoinIn extends AppCompatActivity {
 
     private EditText EdtMail, EdtLastName, EdtName,EdtPassword, EdtPhone;
     private Button BtnJoinIn;
-    private TextView TxtLogin;
+    private TextView TxtLogin, TxtReadTerms;
     private CheckBox CkbTerms;
     private String userId;
     private FirebaseAuth mAuth;
@@ -54,12 +54,14 @@ public class JoinIn extends AppCompatActivity {
         CkbTerms = findViewById(R.id.ckbTerms);
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
-
-
+        TxtReadTerms = findViewById(R.id.txtvReadTerms);
 
     }
 
     public void readTerms(View view) {
+
+        Intent ToReadTerms = new Intent (view.getContext(),ReadTerms.class);
+        startActivity(ToReadTerms);
 
     }
 
