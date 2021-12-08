@@ -2,6 +2,10 @@ package com.example.pideloapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentContainerView;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +13,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +34,7 @@ public class JoinIn extends AppCompatActivity {
     private EditText EdtMail, EdtLastName, EdtName,EdtPassword, EdtPhone;
     private Button BtnJoinIn;
     private TextView TxtLogin;
+    private CheckBox CkbTerms;
     private String userId;
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
@@ -45,10 +51,18 @@ public class JoinIn extends AppCompatActivity {
         EdtPhone = findViewById(R.id.edtPhone);
         BtnJoinIn = findViewById(R.id.btnJoinIn);
         TxtLogin = findViewById(R.id.txtvLogin);
+        CkbTerms = findViewById(R.id.ckbTerms);
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
+
+
     }
+
+    public void readTerms(View view) {
+
+    }
+
 
     public void onJoinIn(View view) {
         String Name = EdtName.getText().toString();
@@ -56,6 +70,7 @@ public class JoinIn extends AppCompatActivity {
         String Mail = EdtMail.getText().toString();
         String Password = EdtPassword.getText().toString();
         String Phone = EdtPhone.getText().toString();
+        Boolean Terms = CkbTerms.isChecked();
 
         if (TextUtils.isEmpty(Name)) {
             EdtName.setError("Enter your name");
@@ -91,6 +106,13 @@ public class JoinIn extends AppCompatActivity {
             EdtConfirmPassword.requestFocus();
             EdtPassword.requestFocus();
         }*/
+        else if (Terms == false){
+
+            CkbTerms.setError("Please accept terms and conditions");
+            CkbTerms.requestFocus();
+
+        }
+
         else
         {
             mAuth.createUserWithEmailAndPassword(Mail, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
