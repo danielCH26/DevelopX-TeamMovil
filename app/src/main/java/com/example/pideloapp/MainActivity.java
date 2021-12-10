@@ -1,7 +1,9 @@
 package com.example.pideloapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,22 +20,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        edtEmail = (EditText) findViewById(R.id.edtxEmail);
-        edtPass = (EditText) findViewById(R.id.edtxPass);
+        edtEmail = (EditText) findViewById(R.id.edtUser);
+        edtPass = (EditText) findViewById(R.id.edtPassword);
         Button bntLogin = (Button) findViewById(R.id.btnLogin);
 
     }
 
     public void onLogin(View view) {
+        Toast aviso = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_LONG);
         if (edtEmail.getText().toString().equals("a@b.c") && edtPass.getText().toString().equals("1234"))
         {
             Intent ToWelcome = new Intent (view.getContext(),Welcome.class);
-            startActivityForResult(ToWelcome,0);
-            Toast.makeText(getApplicationContext(), "@string/welcome", Toast.LENGTH_LONG).show();
+            startActivity(ToWelcome);
+            aviso.setText(getString(R.string.txtWelcome));
+            aviso.show();
         }
         else{
-            Toast.makeText(this,  "@string/errorLogin", Toast.LENGTH_SHORT).show();
+            aviso.setText(getString(R.string.txtErrorLogin));
+            aviso.show();
         }
     }
+
+    public void onGoJoinIn(View view) {
+        //Intent ToJoinIn = new Intent (view.getContext(),JoinIn.class);
+        //startActivity(ToJoinIn);
+    }
+
 }
