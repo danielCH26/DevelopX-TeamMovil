@@ -114,5 +114,6 @@
     <string name="logOut">Cerrar sesión</string>
     <string name="cart">Carrito de comprast</string>
     <string name="profile">Perfil de usuario</string>
+    <string name="productList">Productos de esta categoria</string>
 
 </resources>

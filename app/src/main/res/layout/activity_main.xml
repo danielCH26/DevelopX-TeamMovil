@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/fondo">
+    
+   <!-- <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/naranja"
+        android:elevation="4dp"
+        app:title="Login"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" /> -->
+
 
 
     <ImageView

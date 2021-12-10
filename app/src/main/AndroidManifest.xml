@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PideloApp">
         <activity
+            android:name=".Prodcutos"
+            android:exported="false" />
+        <activity
             android:name=".MainContentApp"
             android:exported="false" />
         <activity

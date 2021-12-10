@@ -114,6 +114,10 @@
     <string name="logOut">Log Out</string>
     <string name="cart">Shopping cart</string>
     <string name="profile">User profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="productList">Products of this category</string>
+
 
 
 </resources>
