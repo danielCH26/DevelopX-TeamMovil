@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtEmail"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="bold"
             android:inputType="textEmailAddress"/>
 
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtPassword"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"/>
 
@@ -80,7 +80,9 @@
                 android:text="@string/txtBtnLogin"
                 android:layout_marginRight="10dp"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:backgroundTint="@color/naranja"
+                android:textColor="@color/white"/>
 
 
             <Button
@@ -91,10 +93,22 @@
                 android:text="@string/txtBtnJoinIn"
                 android:layout_marginLeft="10dp"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
-
-
+                android:textStyle="bold"
+                android:backgroundTint="@color/naranja"
+                android:textColor="@color/white"/>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtvForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtForgetPassword"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="goForgotPassword"
+            />
 
 
     </LinearLayout>

@@ -74,4 +74,9 @@ public class MainActivity extends AppCompatActivity {
         Intent ToJoinIn = new Intent (view.getContext(),JoinIn.class);
         startActivity(ToJoinIn);
     }
+
+    public void goForgotPassword(View view) {
+        Intent ToForgotPassword = new Intent (view.getContext(),ForgetPassword.class);
+        startActivity(ToForgotPassword);
+    }
 }

@@ -22,4 +22,8 @@
     <string name="txtReadTerms">Leer terminos y condiciones</string>
     <string name="txtAccept">Acepto</string>
     <string name="txtOurTerms">Terminos Politicas y Condiciones</string>
+    <string name="txtForgetPassword">¿Olvidaste tu contraseña?</string>
+    <string name="txtSendMail">Enviar Correo</string>
+    <string name="txtChangePassword">Cambia tu contraseña</string>
+    <string name="txtInfoChangePsd">Ingresa tu correo registrado para recibir las instruccuines para cambiar tu contraseña.</string>
 </resources>

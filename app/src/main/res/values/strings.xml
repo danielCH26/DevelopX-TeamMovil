@@ -22,6 +22,10 @@
     <string name="txtReadTerms">Read terms and conditions</string>
     <string name="txtAccept">Accept</string>
     <string name="txtOurTerms">Terms Politics And Conditions</string>
+    <string name="txtForgetPassword">Do you forget your password?</string>
+    <string name="txtSendMail">Send Mail</string>
+    <string name="txtChangePassword">Change your password</string>
+    <string name="txtInfoChangePsd">Enter your registered email address to reciver instructions to change your password.</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 
