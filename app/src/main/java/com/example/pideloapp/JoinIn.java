@@ -139,6 +139,7 @@ public class JoinIn extends AppCompatActivity {
                         Toast.makeText(JoinIn.this, "Usuario registrado", Toast.LENGTH_SHORT).show();
                         Intent ToWelcome = new Intent (view.getContext(),Welcome.class);
                         startActivity(ToWelcome);
+                        finish();
                     }
                     else {
                         Toast.makeText(JoinIn.this,"Usuario no registrado" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -153,5 +154,6 @@ public class JoinIn extends AppCompatActivity {
     public void onGoLogin(View view) {
         Intent ToLogin = new Intent (view.getContext(),MainActivity.class);
         startActivity(ToLogin);
+        finish();
     }
 }

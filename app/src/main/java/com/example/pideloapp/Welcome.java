@@ -50,6 +50,7 @@ public class Welcome extends AppCompatActivity {
                 Toast.makeText(this, "Cerrando sesion", Toast.LENGTH_SHORT).show();
                 Intent ToLogin = new Intent (this,MainActivity.class);
                 startActivity(ToLogin);
+                finish();
                 return true;
 
             default:

@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Bienvenid@ a Pidelo", Toast.LENGTH_SHORT).show();
                         Intent ToWelcome = new Intent (view.getContext(),Welcome.class);
                         startActivity(ToWelcome);
+
                     }
                     else{
                         Log.w("TAG","Error",task.getException());
@@ -73,10 +74,12 @@ public class MainActivity extends AppCompatActivity {
     public void onGoJoinIn(View view) {
         Intent ToJoinIn = new Intent (view.getContext(),JoinIn.class);
         startActivity(ToJoinIn);
+
     }
 
     public void goForgotPassword(View view) {
         Intent ToForgotPassword = new Intent (view.getContext(),ForgetPassword.class);
         startActivity(ToForgotPassword);
+
     }
 }
