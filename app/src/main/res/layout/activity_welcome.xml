@@ -24,10 +24,13 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
             tools:ignore="MissingConstraints" />
 
-        <androidx.fragment.app.FragmentContainerView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
+            android:id="@+id/frameLayout"
+            >
+
+        </FrameLayout>
 
     </LinearLayout>
 

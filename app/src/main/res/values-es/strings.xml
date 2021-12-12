@@ -26,4 +26,7 @@
     <string name="txtSendMail">Enviar Correo</string>
     <string name="txtChangePassword">Cambia tu contraseña</string>
     <string name="txtInfoChangePsd">Ingresa tu correo registrado para recibir las instruccuines para cambiar tu contraseña.</string>
+    <string name="txtActionCategories">Categorias</string>
+    <string name="txtActionCart">Carrito</string>
+    <string name="txtHome">Inicio</string>
 </resources>

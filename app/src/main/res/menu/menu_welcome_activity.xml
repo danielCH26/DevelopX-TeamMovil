@@ -9,6 +9,22 @@
         app:showAsAction="always"/>
 
     <item
+        android:id="@+id/actionCart"
+        android:title="@string/txtActionCart"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/actionHome"
+        android:title="@string/txtHome"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/actionCategories"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/txtActionCategories"
+        app:showAsAction="never"/>
+
+    <item
         android:id="@+id/actionProfile"
         android:icon="@android:drawable/ic_menu_preferences"
         android:title="@string/txtActionProfile"
@@ -19,6 +35,7 @@
         android:icon="@android:drawable/ic_menu_preferences"
         android:title="@string/txtActionSettings"
         app:showAsAction="never"/>
+
 
     <item
         android:id="@+id/actionLogout"

@@ -26,6 +26,11 @@
     <string name="txtSendMail">Send Mail</string>
     <string name="txtChangePassword">Change your password</string>
     <string name="txtInfoChangePsd">Enter your registered email address to reciver instructions to change your password.</string>
+    <string name="txtActionCategories">Categories</string>
+    <string name="txtActionCart">Cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="txtHome">Home</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 
