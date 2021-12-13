@@ -1,11 +1,20 @@
 <resources>
     <string name="app_name">PideloApp</string>
-    <string name="user">Usuario</string>
-    <string name="password">Contraseña</string>
-    <string name="login">Iniciar Sesión</string>
-    <string name="signin1">¿No estas registrado aún? </string>
-    <string name="signin2">Crear cuenta</string>
-    <string name="welcome">Bienvenido</string>
-    <string name="select1">Selecciona una categoría</string>
-    <string name="errorLogin">Usuario o contraseña incorrectos</string>
+    <string name="txtName">Nombre</string>
+    <string name="txtLastName">Apellidos</string>
+    <string name="txtEmail">Correo electronico</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="txtConfirmPassword">Confirmación contraseña</string>
+    <string name="txtBtnLogin">Loguearse</string>
+    <string name="txtBtnJoinIn">Registrarse</string>
+    <string name="txtWelcome">Bienvenido</string>
+    <string name="txtSelect">Selecciona alguna categoría</string>
+    <string name="txtErrorLogin">Usuario o contraseña no son correctos</string>
+    <string name="txtActionSearch">Buscar</string>
+    <string name="txtActionSettings">Configuraciones</string>
+    <string name="txtActionLogout">Cerrar sesion</string>
+    <string name="txtRole">Rol</string>
+    <string name="txtAlreadyRegister">Ya te registraste?</string>
+    <string name="txtPhone">Telefono</string>
+    <string name="txtActionProfile">Perfil</string>
 </resources>

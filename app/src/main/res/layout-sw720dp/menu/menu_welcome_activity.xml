@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionSearch"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/txtActionSearch"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/actionProfile"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/txtActionProfile"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/actionSettings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/txtActionSettings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/actionLogout"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/txtActionLogout"
+        app:showAsAction="never"/>
+
+</menu>
